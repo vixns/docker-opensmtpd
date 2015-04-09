@@ -10,7 +10,7 @@ MAINTAINER Stéphane Cottin <stephane.cottin@vixns.com>
 RUN \
   export DEBIAN_FRONTEND=noninteractive && \
   apt-get update && \
-  apt-get install --no-install-recommends --auto-remove -y opensmtpd && \
+  apt-get install --no-install-recommends --auto-remove -y opensmtpd ca-certificates && \
   rm -rf /var/lib/apt/lists/* 
 
 COPY smtpd.conf /etc/smtpd.conf
