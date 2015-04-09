@@ -13,7 +13,7 @@ RUN \
   apt-get install --no-install-recommends --auto-remove -y opensmtpd && \
   rm -rf /var/lib/apt/lists/* 
 
-COPY smtpd.conf /etc/mail/smtpd.conf
+COPY smtpd.conf /etc/smtpd.conf
 COPY opensmtpd.sh /usr/local/bin/opensmtpd
 
 EXPOSE 25
