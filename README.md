@@ -1,6 +1,6 @@
-# Dockerized Opensmtpd
+#Dockerized Opensmtpd
 
-## usage
+##usage
 
 	docker run -p 25:25 vixns/opensmtpd
 
